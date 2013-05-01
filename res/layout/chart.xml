@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/metro" android:layout_toLeftOf="@+id/track_button" android:entries="@array/metros"></Spinner>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/track_button"  android:text="@string/track_button_label" android:layout_alignParentRight="true"></Button>
+    </RelativeLayout>
+
+    <com.androidplot.xy.XYPlot
+            android:id="@+id/mySimpleXYPlot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            title="InmoStats"/>
+
+</LinearLayout>
