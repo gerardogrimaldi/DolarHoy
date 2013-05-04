@@ -5,4 +5,43 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="20dp">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Contacto" android:id="@+id/textView2" android:layout_gravity="center|left"
+                      android:textSize="30dp"/>
+        </TableRow>
+        <TableRow android:layout_height="50dp"
+                  android:layout_width="fill_parent" android:layout_gravity="center">
+            <EditText android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:id="@+id/editText" android:layout_gravity="center"
+                      android:enabled="true" android:maxLines="1" android:maxLength="50" android:editable="true"
+                      android:hint="Nombre..."/>
+        </TableRow>
+        <TableRow android:layout_gravity="center|top" android:layout_height="50dp"
+                  android:layout_width="fill_parent">
+            <EditText android:editable="true" android:enabled="true" android:id="@+id/editText1"
+                      android:layout_gravity="center" android:layout_height="wrap_content"
+                      android:layout_width="wrap_content" android:maxLines="1"
+                      android:maxLength="50" android:hint="Email..."/>
+        </TableRow>
+        <TableRow android:layout_gravity="center|top" android:layout_height="120dp" android:layout_width="match_parent"
+                  android:id="@+id/tableRow">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_gravity="center">
+                <EditText android:editable="true" android:enabled="true" android:id="@+id/editText2"
+                          android:layout_gravity="center" android:layout_height="match_parent"
+                          android:layout_width="match_parent" android:hint="Comentarios..." android:maxLines="5"/>
+            </LinearLayout>
+        </TableRow>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enviar"
+                android:id="@+id/button" android:layout_gravity="center"/>
+    </LinearLayout>
 </LinearLayout>
