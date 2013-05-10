@@ -21,54 +21,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Oficial"
+                    android:id="@+id/textView2"
                     android:layout_gravity="center"
                     android:textSize="30dp"/>
         </TableRow>
-        <TableLayout
+        <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:baselineAligned="false"
-                android:layout_gravity="center">
-            <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center|right"
-                    android:layout_marginRight="10dp">
-                <TextView android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:text="Compra $"
-                          android:id="@+id/textView1"
-                          android:layout_gravity="center_vertical"
-                          android:textSize="30dp"
-                          android:gravity="right"/>
-                <EditText android:layout_width="wrap_content"
-                          android:layout_height="fill_parent"
-                          android:id="@+id/dolarCompra"
-                          android:layout_gravity="center"
-                          android:enabled="true"
-                          android:text="Valor"
-                          android:gravity="left"
-                          android:editable="false"/>
-            </TableRow>
-            <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center|right"
-                    android:layout_marginRight="10dp">
-                <TextView android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:text="Venta $"
-                          android:id="@+id/textView"
-                          android:textSize="30dp"
-                          android:gravity="right"/>
-                <EditText android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:id="@+id/dolarVenta"
-                          android:layout_gravity="center"
-                          android:editable="false"
-                          android:enabled="true"
-                          android:text="Valor"
-                          android:gravity="left"/>
-            </TableRow>
-        </TableLayout>
+                android:layout_height="50dp" android:layout_gravity="center|right" android:layout_marginRight="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compra $"
+                      android:id="@+id/textView1" android:layout_gravity="center_vertical" android:textSize="30dp"/>
+            <EditText android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:text="New EditText" android:id="@+id/editText" android:layout_gravity="center"
+                      android:enabled="false"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" android:layout_gravity="center|right" android:layout_marginRight="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Venta $"
+                      android:id="@+id/textView" android:layout_gravity="center_vertical" android:textSize="30dp"/>
+            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="New EditText" android:id="@+id/editText1"
+                      android:layout_gravity="center" android:editable="false" android:enabled="false"/>
+        </TableRow>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:layout_gravity="center"/>
     </LinearLayout>
 </LinearLayout>

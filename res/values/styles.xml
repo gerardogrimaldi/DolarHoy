@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="PageIndicatorDefaultsCustom" parent="Theme.Sherlock.Light">
-        <!-- If you want to use the default ViewPagerIndicator-styles, use the following: -->
-        <item name="vpiTitlePageIndicatorStyle">@style/Widget.TabPageIndicator</item>
-        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
-    </style>
-</resources>

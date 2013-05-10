@@ -3,9 +3,8 @@
 	<string name="app_name">Dolar Hoy</string>
 
 	<string name="track_button_label">Dolar Hoy</string>
-    <string name="progDialog">Cargando Valores Actualizados...</string>
 
-    <string-array name="metros">
+	<string-array name="metros">
 		<item>Denver</item>
 		<item>Detroit</item>
 		<item>Miami</item>
@@ -14,7 +13,4 @@
 		<item>Sacramento</item>
 		<item>Seattle</item>
 	</string-array>
-    <string name="Server">http://www.</string>
-    <string name="no_internet">No se puede contactar el servidor...</string>
-
 </resources>

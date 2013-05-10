@@ -31,9 +31,14 @@
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" $"
                       android:id="@+id/textView1" android:layout_gravity="center_vertical" android:textSize="30dp"/>
             <EditText android:layout_width="wrap_content" android:layout_height="fill_parent"
-                      android:id="@+id/editText1" android:editable="false"
-                      android:enabled="true" android:text="Valor"
-                      android:layout_gravity="center"/>
+                      android:text="New EditText" android:id="@+id/editText" android:layout_gravity="center"
+                      android:enabled="false"/>
         </TableRow>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:layout_gravity="center"/>
     </LinearLayout>
 </LinearLayout>

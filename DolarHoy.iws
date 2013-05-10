@@ -27,8 +27,8 @@
     <list default="true" id="b1d15f79-8a44-4496-a7e8-b832a151d4c9" name="Default" comment="" />
     <ignored path="DolarHoy.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/AppStart.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368058788936" ignored="false" />
-    <file path="/fragment.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368064514499" ignored="false" />
+    <file path="/AppStart.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367648036153" ignored="false" />
+    <file path="/fragment.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367679322440" ignored="false" />
     <file path="/Manifest.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367363989707" ignored="false" />
     <file path="/login.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367364173857" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367684421525" ignored="false" />
@@ -51,12 +51,8 @@
     <file path="/Mapa.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367626198090" ignored="false" />
     <file path="/Contacto.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367625658814" ignored="false" />
     <file path="/Fragment4.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367625741301" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/Gerardo/Grimaldi/DolarHoy/R.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367629528563" ignored="false" />
     <file path="/calculadora.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367638905554" ignored="false" />
-    <file path="$PROJECT_DIR$/library/res/values/vpi__colors.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367985489892" ignored="false" />
-    <file path="$PROJECT_DIR$/library/res/values/vpi__attrs.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367985489892" ignored="false" />
-    <file path="$PROJECT_DIR$/library/res/values/vpi__styles.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367985489892" ignored="false" />
-    <file path="$PROJECT_DIR$/library/res/values/vpi__defaults.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367985489892" ignored="false" />
-    <file path="/Dolar.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368064080412" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/TestFragmentAdapter.java" line="40" class="com.Gerardo.Grimaldi.DolarHoy.TestFragmentAdapter" package="com.Gerardo.Grimaldi.DolarHoy">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -118,28 +130,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Dolar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java">
+      <file leaf-file-name="AppStart.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/AppStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0">
+            <state line="15" column="62" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DolarHoyFragmentAdapter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="51" selection-start="246" selection-end="246" vertical-scroll-proportion="-0.65120965">
+            <state line="7" column="52" selection-start="373" selection-end="373" vertical-scroll-proportion="0.21364452">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DolarHoyWebAPITask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java">
+      <file leaf-file-name="Model.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="1" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
+            <state line="9" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,29 +167,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Contacto.java" />
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Pages/Contacto.java" />
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Fragment4.java" />
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Pages/About.java" />
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/TestFragmentAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Pages/Mapa.java" />
+        <option value="$PROJECT_DIR$/res/layout/tarjeta.xml" />
+        <option value="$PROJECT_DIR$/res/layout/mapa.xml" />
         <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Pages/Calculadora.java" />
         <option value="$PROJECT_DIR$/res/layout/calculadora.xml" />
         <option value="$PROJECT_DIR$/res/layout/contacto.xml" />
         <option value="$PROJECT_DIR$/res/layout/about.xml" />
+        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/AppStart.java" />
         <option value="$PROJECT_DIR$/src/Model/Model.java" />
-        <option value="$PROJECT_DIR$/actionbarsherlock/test/com/actionbarsherlock/internal/ResourcesCompatTest.java" />
         <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Model.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/TestFragmentAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/TestFragmentAdapter213.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/AppStart.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/About.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Views/Dolar.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java" />
-        <option value="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1692" />
+    <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -206,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -226,114 +237,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Infraestructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DolarHoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,20 +266,17 @@
       <recent name="com.Gerardo.Grimaldi.DolarHoy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\src\com\Gerardo\Grimaldi\DolarHoy" />
-      <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\res\layout" />
       <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\gen\com\Gerardo\Grimaldi\DolarHoy" />
       <recent name="C:\Users\Milo\Desktop\DolarHoy\res\layout" />
       <recent name="C:\Users\Milo\Desktop\DolarHoy\src\com\example\asdlkf" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.Gerardo.Grimaldi.DolarHoy" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\res\values" />
       <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\res\layout" />
       <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\res\layout\Pages" />
       <recent name="C:\Users\Milo\Documents\GitHub\DolarHoy\src\com\Gerardo\Grimaldi\DolarHoy" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Gerardo.Grimaldi.DolarHoy" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.DolarHoy">
@@ -508,7 +411,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="MonoForAndroid_API_17" />
+      <option name="PREFERRED_AVD" value="MonoForAndroid_API_7" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -538,22 +441,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.67012686" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3979239" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39907727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756633" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -561,13 +463,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24539877" sideWeight="0.6020761" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3194925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24479803" sideWeight="0.6724337" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756633" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32680538" sideWeight="0.6724337" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.6724337" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.67012686" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -637,103 +540,106 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Data.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="246" selection-end="246" vertical-scroll-proportion="0.37701613">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/calculadora.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/contacto.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="46" column="15" selection-start="2787" selection-end="2787" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/dolar.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1730" selection-end="2449" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/about.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="40" selection-start="907" selection-end="907" vertical-scroll-proportion="-12.92">
-          <folding />
-        </state>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
+      <provider editor-type-id="text-editor">
+        <state line="24" column="97" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/tarjeta.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1979" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Views/Mapa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Views/Tarjeta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="0" selection-end="444" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Views/Contacto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Views/Calculadora.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="52" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Views/Blue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/TestFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="354" selection-end="354" vertical-scroll-proportion="0.030520646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/mapa.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/About.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="29" column="8" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.8082707" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="0.66312057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="417" selection-end="417" vertical-scroll-proportion="0.2109929">
+        <state line="9" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/AppStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.63829786">
+        <state line="15" column="62" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyHelper.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="496" selection-end="496" vertical-scroll-proportion="-0.45212767">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="1" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/view/ContextThemeWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/view/LayoutInflater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="0" selection-start="15527" selection-end="15527" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/content/res/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1009" column="0" selection-start="42680" selection-end="42680" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/content/res/AssetManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="0" selection-start="6322" selection-end="6322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="51" selection-start="246" selection-end="246" vertical-scroll-proportion="-0.65120965">
+        <state line="7" column="52" selection-start="373" selection-end="373" vertical-scroll-proportion="0.21364452">
           <folding />
         </state>
       </provider>
@@ -790,7 +696,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>DolarHoy</last-edited>
+          <last-edited>actionbarsherlock</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
