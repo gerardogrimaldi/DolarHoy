@@ -24,15 +24,30 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d15f79-8a44-4496-a7e8-b832a151d4c9" name="Default" comment="" />
+    <list default="true" id="b1d15f79-8a44-4496-a7e8-b832a151d4c9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.iml" afterPath="$PROJECT_DIR$/DolarHoy.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.ipr" afterPath="$PROJECT_DIR$/DolarHoy.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.iws" afterPath="$PROJECT_DIR$/DolarHoy.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" afterPath="$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/library.iml" afterPath="$PROJECT_DIR$/library/library.iml" />
+    </list>
     <ignored path="DolarHoy.iws" />
     <ignored path=".idea/workspace.xml" />
+<<<<<<< HEAD
     <file path="/AppStart.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368300677182" ignored="false" />
     <file path="/fragment.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368295388066" ignored="false" />
     <file path="/Manifest.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367363989707" ignored="false" />
     <file path="/login.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367364173857" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368069657891" ignored="false" />
     <file path="/Dummy.txt" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367434820147" ignored="false" />
+=======
+    <file path="/AppStart.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368058788936" ignored="false" />
+    <file path="/fragment.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368229899403" ignored="false" />
+    <file path="/Manifest.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367363989707" ignored="false" />
+    <file path="/login.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367364173857" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367684421525" ignored="false" />
+    <file path="/Dummy.txt" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1368229763184" ignored="false" />
+>>>>>>> second commit all files ok for test
     <file path="/blue.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367434009868" ignored="false" />
     <file path="/tarjeta.xml" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367434101477" ignored="false" />
     <file path="/FragmentFactory.java" changelist="b1d15f79-8a44-4496-a7e8-b832a151d4c9" time="1367436938640" ignored="false" />
@@ -75,7 +90,10 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+<<<<<<< HEAD
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+=======
+>>>>>>> second commit all files ok for test
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -112,6 +130,10 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+<<<<<<< HEAD
+=======
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+>>>>>>> second commit all files ok for test
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -121,8 +143,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="AppStart.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/AppStart.java">
+=======
+      <file leaf-file-name="Dolar.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DolarHoyFragmentAdapter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="13" selection-start="723" selection-end="731" vertical-scroll-proportion="0.42704627">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DolarHoyWebAPITask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java">
+>>>>>>> second commit all files ok for test
           <provider selected="true" editor-type-id="text-editor">
             <state line="53" column="23" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.56567425">
               <folding>
@@ -138,6 +185,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -162,10 +217,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1692" />
-    <option name="height" value="1026" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="710" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -174,6 +228,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -193,8 +249,11 @@
       <sortByType />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+>>>>>>> second commit all files ok for test
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -353,6 +412,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -574,23 +635,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="710" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.67012686" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37370244" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39695945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> second commit all files ok for test
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3979239" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> second commit all files ok for test
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -598,13 +665,24 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5122699" sideWeight="0.6885813" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31141868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24473257" sideWeight="0.6020761" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3194925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> second commit all files ok for test
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32680538" sideWeight="0.6724337" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.6724337" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.67012686" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> second commit all files ok for test
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -673,6 +751,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="jar://$PROJECT_DIR$/library/libs/android-support-v4.jar!/android/support/v4/app/FragmentManagerImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="9" selection-start="5159" selection-end="5159" vertical-scroll-proportion="0.3318078" />
@@ -681,6 +760,29 @@
     <entry file="jar://$PROJECT_DIR$/library/libs/android-support-v4.jar!/android/support/v4/view/ViewPager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="168" column="17" selection-start="7370" selection-end="7370" vertical-scroll-proportion="0.33187774" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="51" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="1" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+>>>>>>> second commit all files ok for test
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Data.java">
@@ -692,11 +794,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyHelper.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="14" column="13" selection-start="423" selection-end="432" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="docComment;method#downloadFromServer#0;class#DolarHoyHelper#0" expanded="false" />
           </folding>
         </state>
+=======
+        <state line="19" column="40" selection-start="907" selection-end="907" vertical-scroll-proportion="-12.92" />
+>>>>>>> second commit all files ok for test
       </provider>
     </entry>
     <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/app/Instrumentation.java">
@@ -715,11 +821,15 @@
     </entry>
     <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#192272#0" expanded="true" />
           </folding>
         </state>
+=======
+        <state line="7" column="12" selection-start="417" selection-end="417" vertical-scroll-proportion="0.2109929" />
+>>>>>>> second commit all files ok for test
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java">
@@ -743,6 +853,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://D:/AndroidSDK/sdk/sources/android-14/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -779,6 +890,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Dolar.java">
+>>>>>>> second commit all files ok for test
       <provider selected="true" editor-type-id="text-editor">
         <state line="95" column="26" selection-start="4041" selection-end="4041" vertical-scroll-proportion="1.3351254">
           <folding />
@@ -787,9 +901,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/AppStart.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="53" column="23" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.56567425">
           <folding>
             <element signature="method#onCreateOptionsMenu#0;class#AppStart#0" expanded="false" />
+=======
+        <state line="20" column="13" selection-start="723" selection-end="731" vertical-scroll-proportion="0.42704627">
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> second commit all files ok for test
           </folding>
         </state>
       </provider>
