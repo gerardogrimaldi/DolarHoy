@@ -17,8 +17,8 @@ public class Dolar extends Fragment{
         EditText dolarVenta = (EditText) myFragmentView.findViewById(R.id.dolarVenta);
 
 
-        dolarCompra.setText("HOLA");//getArguments().getString("DolarCompra").toString());
-        //dolarVenta.setText(getArguments().getString("DolarVenta").toString());
+        dolarCompra.setText(getArguments().getString("DolarCompra").toString());
+        dolarVenta.setText(getArguments().getString("DolarVenta").toString());
 
         return myFragmentView;//inflater.inflate(R.layout.dolar, null);
     }

@@ -1,21 +1,25 @@
 package com.Gerardo.Grimaldi.DolarHoy.Infraestructure;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import com.Gerardo.Grimaldi.DolarHoy.Controllers.*;
+import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
 import com.viewpagerindicator.IconPagerAdapter;
+
+import java.math.BigDecimal;
 
 public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
     private static final String[] CONTENT = new String[] {
             "Dolar", "Blue" ,"Tarjeta", "Calculadora", "Mapa", "Contacto", "Acerca de..."
     };
-    //Data data;
+    Data data;
 	private int mCount = CONTENT.length;
 
-    public DolarHoyFragmentAdapter(FragmentManager fm){//, Data data) {
+    public DolarHoyFragmentAdapter(FragmentManager fm, Data data) {
 		super(fm);
-        //this.data = data;
+       // this.data = data;
 	}
 
 	@Override
@@ -27,23 +31,21 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
 	@Override
 	public Fragment getItem(int position) {
         Fragment fragment = new Dolar();
-//        Bundle bundle = new Bundle();
-//        if (data == null)
-//            data = new Data(new BigDecimal(""),
-//                    new BigDecimal(""),
-//                    new BigDecimal(""),
-//                    new BigDecimal(""),
-//                    new BigDecimal(""),
-//                    new BigDecimal(""),
-//                    new BigDecimal("")) ;
-//        bundle.putString("DolarCompra", data.getValorDolarHoyCompra().toString());;
-//        bundle.putString("DolarVenta", data.getValorDolarHoyVenta().toString());;
-//        fragment.setArguments(bundle);
-
+        Bundle bundle = new Bundle();
+        if (data == null)
+            data = new Data(new BigDecimal("5.2"),
+                   new BigDecimal("5.2"),
+                   new BigDecimal("5.2"),
+                   new BigDecimal("5.2"),
+                   new BigDecimal("5.2"),
+                   new BigDecimal("5.2"),
+                   new BigDecimal("5.2")) ;
         switch(position){
 		case 0:
 			fragment = new Dolar();
-
+            bundle.putString("DolarCompra", data.getValorDolarHoyCompra().toString());;
+            bundle.putString("DolarVenta", data.getValorDolarHoyVenta().toString());;
+            fragment.setArguments(bundle);
             break;
 		case 1:
 			fragment = new Blue();

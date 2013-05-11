@@ -3,9 +3,7 @@ package com.Gerardo.Grimaldi.DolarHoy;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.SubMenu;
+import android.view.*;
 import android.widget.Toast;
 import com.Gerardo.Grimaldi.DolarHoy.Infraestructure.DolarHoyFragmentAdapter;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
@@ -39,30 +37,35 @@ public class AppStart extends FragmentActivity {
 
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        execTask();
+    }
+
+    public void startFragments(){
+
+        mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
+
         setContentView(R.layout.main);
 
-        mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager());
-
-        mPager = (ViewPager)findViewById(R.id.pager);
+        mPager =  (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mAdapter);
 
         mIndicator = (TabPageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
-    }
 
+
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case 2:
                 // Do refresh
-
                 try {
-                DhTask = new DolarHoyWebAPITask(AppStart.this);
-                DhTask.execute();
+                    execTask();
                 }
                 catch (Exception e)
                 {
@@ -86,5 +89,10 @@ public class AppStart extends FragmentActivity {
     public void alert (String msg)
     {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+    }
+
+    protected void execTask(){
+        DhTask = new DolarHoyWebAPITask(AppStart.this);
+        DhTask.execute();
     }
 }
