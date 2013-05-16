@@ -12,7 +12,7 @@ import com.viewpagerindicator.PageIndicator;
 import com.viewpagerindicator.TabPageIndicator;
 import com.viewpagerindicator.TitlePageIndicator;
 
-public class AppStart extends FragmentActivity {
+public class MainActivity extends FragmentActivity {
     DolarHoyFragmentAdapter mAdapter;
     ViewPager mPager;
     PageIndicator mIndicator;
@@ -92,7 +92,7 @@ public class AppStart extends FragmentActivity {
     }
 
     protected void execTask(){
-        DhTask = new DolarHoyWebAPITask(AppStart.this);
+        DhTask = new DolarHoyWebAPITask(MainActivity.this);
         DhTask.execute();
     }
 }

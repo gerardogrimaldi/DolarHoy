@@ -3,14 +3,9 @@ package com.Gerardo.Grimaldi.DolarHoy.tasks;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
-import com.Gerardo.Grimaldi.DolarHoy.AppStart;
+import com.Gerardo.Grimaldi.DolarHoy.MainActivity;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
 import com.Gerardo.Grimaldi.DolarHoy.R;
-import com.viewpagerindicator.TabPageIndicator;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.math.BigDecimal;
 
@@ -18,10 +13,10 @@ import java.math.BigDecimal;
 public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
 	private ProgressDialog progDialog;
 	private Context context;
-	private AppStart activity;
+	private MainActivity activity;
 	private static final String debugTag = "DolarHoyWebAPITask";
 
-    public DolarHoyWebAPITask(AppStart activity) {
+    public DolarHoyWebAPITask(MainActivity activity) {
 		super();
         this.activity = activity;
         this.context = this.activity.getApplicationContext();

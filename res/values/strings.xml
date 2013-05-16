@@ -16,5 +16,4 @@
 	</string-array>
     <string name="Server">http://www.</string>
     <string name="no_internet">No se puede contactar el servidor...</string>
-
 </resources>
