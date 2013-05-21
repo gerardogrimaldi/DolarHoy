@@ -11,20 +11,17 @@ import com.viewpagerindicator.IconPagerAdapter;
 import java.math.BigDecimal;
 
 public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
-    private static final String[] CONTENT = new String[] {
-            "Dolar", "Blue" ,"Tarjeta", "Calculadora", "Mapa", "Contacto", "Acerca de..."
-    };
     Data data;
+    private static final String[] CONTENT = new String[] { "Dolar", "Blue" ,"Tarjeta", "Calculadora", "Mapa", "Contacto", "Acerca de..." };
 	private int mCount = CONTENT.length;
 
     public DolarHoyFragmentAdapter(FragmentManager fm, Data data) {
 		super(fm);
-       // this.data = data;
+        this.data = data;
 	}
 
 	@Override
 	public int getIconResId(int index) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -43,8 +40,8 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
         switch(position){
 		case 0:
 			fragment = new Dolar();
-            bundle.putString("DolarCompra", data.getValorDolarHoyCompra().toString());;
-            bundle.putString("DolarVenta", data.getValorDolarHoyVenta().toString());;
+            bundle.putString("DolarCompra", data.getValorDolarHoyCompra().toString());
+            bundle.putString("DolarVenta", data.getValorDolarHoyVenta().toString());
             fragment.setArguments(bundle);
             break;
 		case 1:

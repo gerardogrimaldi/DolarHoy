@@ -16,4 +16,7 @@
 	</string-array>
     <string name="Server">http://www.</string>
     <string name="no_internet">No se puede contactar el servidor...</string>
+    <string name="UrlServer">http://dolarhoyserver3.gerardogrimaldi.c9.io/Dolar/</string>
+    <string name="PasswordServer">Hola123!</string>
+    <string name="ErrorNoData">El servidor no contesta. Pruebe mas tarde.</string>
 </resources>

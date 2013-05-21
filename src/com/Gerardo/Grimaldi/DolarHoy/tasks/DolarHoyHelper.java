@@ -1,6 +1,8 @@
 package com.Gerardo.Grimaldi.DolarHoy.tasks;
 
+import android.content.res.Resources;
 import android.util.Log;
+import com.Gerardo.Grimaldi.DolarHoy.R;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
@@ -12,21 +14,18 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 public class DolarHoyHelper {
-             private static final String GetValuestUrl = "http://ws.audioscrobbler.com/2.0/?method=geo.getmetrotrackchart&country=united+states&format=json&api_key=495635bdb0f5e1dd9f86c26e40c71829&metro=0";
+    private static final String GetValuestUrl = "http://dolarhoyserver3.gerardogrimaldi.c9.io/Dolar/Hola123!";
 	private static final int HTTP_STATUS_OK = 200;
 	private static byte[] buff = new byte[1024];
-	private static final String logTag = "DolarHoyHelper";
+	//private static final String logTag = "DolarHoyHelper";
 
 	public static class ApiException extends Exception {
 		private static final long serialVersionUID = 1L;
-
-		public ApiException (String msg)
-		{
+    	public ApiException (String msg) {
 			super (msg);
 		}
 
-		public ApiException (String msg, Throwable thr)
-		{
+		public ApiException (String msg, Throwable thr)	{
 			super (msg, thr);
 		}
 	}
@@ -39,9 +38,9 @@ public class DolarHoyHelper {
 	 */
 	protected static synchronized String downloadFromServer (String... params) throws ApiException	{
 		String retrival;
-		//String metro = params[0];
+		//String password = params[0];
 		String url = GetValuestUrl;
-		Log.d(logTag,"Fetching " + url);
+		//Log.d(logTag, "Fetching " + url);
 		// create an http client and a request object.
 		HttpClient client = new DefaultHttpClient();
 		HttpGet request = new HttpGet(url);
@@ -51,7 +50,7 @@ public class DolarHoyHelper {
 			StatusLine status = response.getStatusLine();
 			if (status.getStatusCode() != HTTP_STATUS_OK) {
 				// handle error here
-				throw new ApiException("Invalid response from last.fm" + status.toString());
+				throw new ApiException("Invalid response " + status.toString());
 			}
 			// process the content.
 			HttpEntity entity = response.getEntity();
@@ -62,10 +61,10 @@ public class DolarHoyHelper {
 			while ((readCount = ist.read(buff)) != -1) {
 				content.write(buff, 0, readCount);
 			}
-			retrival = new String (content.toByteArray());
+			retrival = content.toString();
+            return retrival;
 		} catch (Exception e) {
 			throw new ApiException("Problem connecting to the server " + e.getMessage(), e);
 		}
-		return retrival;
 	}
 }

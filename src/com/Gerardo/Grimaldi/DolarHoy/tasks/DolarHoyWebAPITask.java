@@ -3,9 +3,12 @@ package com.Gerardo.Grimaldi.DolarHoy.tasks;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 import com.Gerardo.Grimaldi.DolarHoy.MainActivity;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
 import com.Gerardo.Grimaldi.DolarHoy.R;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.math.BigDecimal;
 
@@ -24,59 +27,51 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
 
 	@Override
     protected void onPreExecute() {
-        super.onPreExecute(); 
+        super.onPreExecute();
     	progDialog = ProgressDialog.show(this.activity, "Actualizando...", this.context.getResources().getString(R.string.progDialog), true, false);
     }
 
     @Override
     protected String doInBackground(String... params) {
+        Log.d(debugTag,"Background:" + Thread.currentThread().getName());
+        String result = null;
         try {
-        	//Log.d(debugTag,"Background:" + Thread.currentThread().getName());
-            //String result = DolarHoyHelper.downloadFromServer(params);
-            String result = "hola";
-            return result;
-        } catch (Exception e) {
+            result = DolarHoyHelper.downloadFromServer(params);
+        } catch (DolarHoyHelper.ApiException e) {
+            //e.printStackTrace();
             return new String();
         }
+        return result;
     }
-    
+
+
     @Override
-    protected void onPostExecute(String result) 
+    protected void onPostExecute(String result)
     {
         progDialog.dismiss();
         super.onPostExecute(result);
         if (result.length() == 0) {
-            this.activity.alert ("Unable to find track data. Try again later.");
+            this.activity.alert(R.string.ErrorNoData + "");
             return;
         }
-        
         try {
-			//JSONObject respObj = new JSONObject(result);
+			JSONObject respObj = new JSONObject(result);
 			//JSONObject dataObj = respObj.getJSONObject("Dolar");
-            /*BigDecimal valorDolarHoyCompra = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));
-            BigDecimal valorDolarHoyVenta = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));
-            BigDecimal valorDolarBlueCompra = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));
-            BigDecimal valorDolarBlueVenta = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));
-            BigDecimal valorDolarTarjeta = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));
-            BigDecimal valorEuroHoyCompra = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));
-            BigDecimal valorEuroHoyVenta = new BigDecimal(dataObj.getString("name").replaceAll(",", "").replaceAll(".", ""));*/
+            BigDecimal dolarCompra = new BigDecimal(respObj.getString("dolarCompra").replaceAll(",", "").replaceAll(".", ""));
+            BigDecimal dolarVenta = new BigDecimal(respObj.getString("dolarVenta").replaceAll(",", "").replaceAll(".", ""));
+            BigDecimal dolarBlueCompra = new BigDecimal(respObj.getString("dolarBlueCompra").replaceAll(",", "").replaceAll(".", ""));
+            BigDecimal dolarBlueVenta = new BigDecimal(respObj.getString("dolarBlueVenta").replaceAll(",", "").replaceAll(".", ""));
+            BigDecimal dolarTarjeta = new BigDecimal(respObj.getString("dolarTarjeta").replaceAll(",", "").replaceAll(".", ""));
+            BigDecimal euroCompra = new BigDecimal(respObj.getString("euroCompra").replaceAll(",", "").replaceAll(".", ""));
+            BigDecimal euroVenta = new BigDecimal(respObj.getString("euroVenta").replaceAll(",", "").replaceAll(".", ""));
 
-//            {
-//                "valorDolarHoyCompra": "5.2",
-//                    "valorDolarHoyVenta": "5.2",
-//                    "valorDolarBlueCompra": "5.2",
-//                    "valorDolarBlueVenta": "5.2",
-//                    "valorDolarTarjeta": "5.2",
-//                    "valorEuroHoyCompra": "5.2",
-//                    "valorEuroHoyVenta": "5.2",
-//            }
-            BigDecimal valorDolarHoyCompra = new BigDecimal("5.3");
-            BigDecimal valorDolarHoyVenta = new BigDecimal("5.3");
-            BigDecimal valorDolarBlueCompra = new BigDecimal("5.3");
-            BigDecimal valorDolarBlueVenta = new BigDecimal("5.3");
-            BigDecimal valorDolarTarjeta = new BigDecimal("5.3");
-            BigDecimal valorEuroHoyCompra = new BigDecimal("5.3");
-            BigDecimal valorEuroHoyVenta = new BigDecimal("5.3");
+            BigDecimal valorDolarHoyCompra = dolarCompra;
+            BigDecimal valorDolarHoyVenta = dolarVenta;
+            BigDecimal valorDolarBlueCompra = dolarBlueCompra;
+            BigDecimal valorDolarBlueVenta = dolarBlueVenta;
+            BigDecimal valorDolarTarjeta = dolarTarjeta;
+            BigDecimal valorEuroHoyCompra = euroCompra;
+            BigDecimal valorEuroHoyVenta = euroVenta;
 
             Data data = new Data( valorDolarHoyCompra,
                     valorDolarHoyVenta,
@@ -90,8 +85,7 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
             this.activity.startFragments();
 
 
-        } catch (Exception e){//(JSONException e) {
-			// TODO Auto-generated catch block
+        } catch (JSONException e) {
 			e.printStackTrace();
 		}
     }

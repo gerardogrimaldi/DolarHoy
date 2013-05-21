@@ -56,7 +56,5 @@ public class NowLayout extends LinearLayout implements OnGlobalLayoutListener {
 
             inversed = !inversed;
         }
-
     }
-
 }

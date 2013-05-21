@@ -21,20 +21,12 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
-        menu.add(0, 1, 1, "Menu").setEnabled(false)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-
+        menu.add(0, 1, 1, "Menu").setEnabled(false).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
         SubMenu subMenu = menu.addSubMenu(0, 0, 2,"");
-
-        subMenu.add(0, 2, 2, "Refrescar...")
-                .setIcon(R.drawable.ic_menu_refresh_inverse);
-
-
+        subMenu.add(0, 2, 2, "Refrescar...").setIcon(R.drawable.ic_menu_refresh_inverse);
         MenuItem subMenuItem = subMenu.getItem();
         subMenuItem.setIcon(R.drawable.ic_menu_config);
         subMenuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -45,32 +37,25 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void startFragments(){
-
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
-
         setContentView(R.layout.main);
 
-        mPager =  (ViewPager) findViewById(R.id.pager);
+        mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mAdapter);
 
         mIndicator = (TabPageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
-
-
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case 2:
-                // Do refresh
                 try {
                     execTask();
-                }
-                catch (Exception e)
-                {
+                } catch (Exception e) {
                     DhTask.cancel(true);
-                    alert (getResources().getString(R.string.no_internet));
+                    alert(getResources().getString(R.string.no_internet));
                 }
                 return true;
             default:
@@ -86,12 +71,11 @@ public class MainActivity extends FragmentActivity {
         return data;
     }
 
-    public void alert (String msg)
-    {
+    public void alert (String msg) {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
     }
 
-    protected void execTask(){
+    protected void execTask() {
         DhTask = new DolarHoyWebAPITask(MainActivity.this);
         DhTask.execute();
     }
