@@ -18,6 +18,15 @@ public class MainActivity extends FragmentActivity {
     PageIndicator mIndicator;
     private Data data;
     private DolarHoyWebAPITask DhTask;
+    private boolean fragmentsOn = false;
+
+    public boolean isFragmentsOn() {
+        return fragmentsOn;
+    }
+
+    public void setFragmentsOn(boolean fragmentsOn) {
+        this.fragmentsOn = fragmentsOn;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -37,6 +46,7 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void startFragments(){
+        setFragmentsOn(true);
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
         setContentView(R.layout.main);
 
