@@ -18,8 +18,8 @@ public class Blue extends Fragment {
         EditText dolarVenta = (EditText) myFragmentView.findViewById(R.id.dolarBlueVenta);
 
 
-        dolarCompra.setText(getArguments().getString("DolarBlueCompra"));
-        dolarVenta.setText(getArguments().getString("DolarBlueVenta"));
+        dolarCompra.setText(getArguments().getString("dolarBlueCompra"));
+        dolarVenta.setText(getArguments().getString("dolarBlueVenta"));
 
         return myFragmentView;//inflater.inflate(R.layout.dolar, null);
 

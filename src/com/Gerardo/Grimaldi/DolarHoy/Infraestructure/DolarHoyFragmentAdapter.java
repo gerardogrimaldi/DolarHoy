@@ -53,14 +53,21 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
             bundle.putString("dolarBlueVenta", data.getValorDolarBlueVenta().toString());
             bundle.putString("dolarTarjeta", data.getValorDolarTarjeta().toString());
             bundle.putString("euroVenta", data.getValorEuroHoyVenta().toString());
+            fragment.setArguments(bundle);
             break;
         case 4:
-            fragment = new Mapa();
+            fragment = new Euro();
+            bundle.putString("euroCompra", data.getValorEuroHoyCompra().toString());
+            bundle.putString("euroVenta", data.getValorEuroHoyVenta().toString());
+            fragment.setArguments(bundle);
             break;
         case 5:
-            fragment = new Contacto();
+            fragment = new Mapa();
             break;
         case 6:
+            fragment = new Contacto();
+            break;
+        case 7:
             fragment = new About();
             break;
 		}
@@ -95,6 +102,9 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
             title = CONTENT[5];
             break;
         case 6:
+            title = CONTENT[6];
+            break;
+        case 7:
             title = CONTENT[6];
             break;
 		}
