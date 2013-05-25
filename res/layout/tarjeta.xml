@@ -5,35 +5,50 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:fillViewport="true" >
+       <com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e5e5e5"
+                android:orientation="vertical" >
+            <LinearLayout
+                    style="@style/nowCardStyle"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    tools:context=".MainActivity"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    >
 
-    <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical" android:layout_margin="20dp"
-            >
-
-        <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:id="@+id/tableRow">
-            <TextView
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/tableRow">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dolar Tarjeta"
+                            android:id="@+id/textView2"
+                            android:layout_gravity="center"
+                            android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dolar Tarjeta"
-                    android:id="@+id/textView2"
-                    android:layout_gravity="center"
-                    android:textSize="30dp"/>
-        </TableRow>
-        <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="50dp" android:layout_gravity="center">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" $"
-                      android:id="@+id/textView1" android:layout_gravity="center_vertical" android:textSize="30dp"/>
-            <EditText android:layout_width="wrap_content" android:layout_height="fill_parent"
-                      android:id="@+id/editText1" android:editable="false"
-                      android:enabled="true" android:text="Valor"
-                      android:layout_gravity="center"/>
-        </TableRow>
-    </LinearLayout>
+                    android:layout_height="50dp" android:layout_gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" $"
+                          android:id="@+id/textView1" android:layout_gravity="center_vertical" android:textSize="30dp"/>
+                <EditText android:layout_width="wrap_content" android:layout_height="fill_parent"
+                          android:id="@+id/dolarTarjeta" android:editable="false"
+                          android:enabled="true"
+                          android:layout_gravity="center"/>
+                </TableRow>
+            </LinearLayout>
+        </com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout>
+    </ScrollView>
 </LinearLayout>

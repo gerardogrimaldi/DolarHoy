@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 
 public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
     Data data;
-    private static final String[] CONTENT = new String[] { "Dolar", "Blue" ,"Tarjeta", "Calculadora", "Mapa", "Contacto", "Acerca de..." };
+    private static final String[] CONTENT = new String[] { "Dolar", "Blue" ,"Tarjeta", "Calculadora", "Euro", "Mapa", "Contacto", "Acerca de..." };
 	private int mCount = CONTENT.length;
 
     public DolarHoyFragmentAdapter(FragmentManager fm, Data data) {
@@ -29,36 +29,31 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
 	public Fragment getItem(int position) {
         Fragment fragment = new Dolar();
         Bundle bundle = new Bundle();
-        if (data == null)
-            data = new Data(new BigDecimal("5.2"),
-                   new BigDecimal("5.2"),
-                   new BigDecimal("5.2"),
-                   new BigDecimal("5.2"),
-                   new BigDecimal("5.2"),
-                   new BigDecimal("5.2"),
-                   new BigDecimal("5.2")) ;
         switch(position){
 		case 0:
 			fragment = new Dolar();
-            bundle.putString("DolarCompra", data.getValorDolarHoyCompra().toString());
-            bundle.putString("DolarVenta", data.getValorDolarHoyVenta().toString());
+            bundle.putString("dolarCompra", data.getValorDolarHoyCompra().toString());
+            bundle.putString("dolarVenta", data.getValorDolarHoyVenta().toString());
             fragment.setArguments(bundle);
             break;
 		case 1:
 			fragment = new Blue();
-//            bundle.putString("BlueCompra", data.getValorDolarBlueCompra().toString());;
-//            bundle.putString("BlueVenta", data.getValorDolarBlueVenta().toString());;
-//            fragment.setArguments(bundle);
+            bundle.putString("dolarBlueCompra", data.getValorDolarBlueCompra().toString());
+            bundle.putString("dolarBlueVenta", data.getValorDolarBlueVenta().toString());
+            fragment.setArguments(bundle);
 			break;
 		case 2:
 			fragment = new Tarjeta();
-//            bundle.putString("DolarTarjeta", data.getValorDolarTarjeta().toString());;
-//            fragment.setArguments(bundle);
+            bundle.putString("dolarTarjeta", data.getValorDolarTarjeta().toString());
+            fragment.setArguments(bundle);
 			break;
 		case 3:
             fragment = new Calculadora();
-//            bundle.putString("DolarTarjeta", data.getValorDolarTarjeta().toString());;
-			break;
+            bundle.putString("dolarVenta", data.getValorDolarHoyVenta().toString());
+            bundle.putString("dolarBlueVenta", data.getValorDolarBlueVenta().toString());
+            bundle.putString("dolarTarjeta", data.getValorDolarTarjeta().toString());
+            bundle.putString("euroVenta", data.getValorEuroHoyVenta().toString());
+            break;
         case 4:
             fragment = new Mapa();
             break;

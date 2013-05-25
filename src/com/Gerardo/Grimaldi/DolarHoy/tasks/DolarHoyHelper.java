@@ -14,7 +14,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 public class DolarHoyHelper {
-    private static final String GetValuestUrl = "http://dolarhoyserver3.gerardogrimaldi.c9.io/Dolar/Hola123!";
+    private static final String GetValuestUrl = "http://dolarhoyserver.herokuapp.com/dolar/Hola123!";
 	private static final int HTTP_STATUS_OK = 200;
 	private static byte[] buff = new byte[1024];
 	//private static final String logTag = "DolarHoyHelper";
