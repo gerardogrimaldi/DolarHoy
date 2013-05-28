@@ -269,19 +269,25 @@
     <dictionary name="Milo">
       <words>
         <w>actualizados</w>
+        <w>calcular</w>
         <w>cargando</w>
         <w>contactar</w>
         <w>contesta</w>
         <w>dolarhoy</w>
         <w>dolarhoydb</w>
+        <w>grimaldi</w>
         <w>hola</w>
         <w>intente</w>
         <w>inversed</w>
+        <w>johg</w>
         <w>mongohq</w>
+        <w>myrb</w>
         <w>paralelo</w>
         <w>pruebe</w>
         <w>puede</w>
         <w>servidor</w>
+        <w>setear</w>
+        <w>seteo</w>
         <w>tarde</w>
         <w>valores</w>
         <w>valuest</w>
@@ -293,6 +299,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DolarHoy.iml" filepath="$PROJECT_DIR$/DolarHoy.iml" />
       <module fileurl="file://$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://D:/AndroidSDK/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" filepath="D:/AndroidSDK/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
@@ -306,6 +313,13 @@
     <library name="android-support-v4">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/library/libs/android-support-v4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="google-play-services">
+      <CLASSES>
+        <root url="jar://D:/AndroidSDK/sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

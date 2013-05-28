@@ -19,13 +19,13 @@
         <TableRow android:layout_height="50dp"
                   android:layout_width="fill_parent" android:layout_gravity="center">
             <EditText android:layout_width="wrap_content" android:layout_height="fill_parent"
-                      android:id="@+id/editText" android:layout_gravity="center"
+                      android:id="@+id/editNombre" android:layout_gravity="center"
                       android:enabled="true" android:maxLines="1" android:maxLength="50" android:editable="true"
                       android:hint="Nombre..."/>
         </TableRow>
         <TableRow android:layout_gravity="center|top" android:layout_height="50dp"
                   android:layout_width="fill_parent">
-            <EditText android:editable="true" android:enabled="true" android:id="@+id/editText1"
+            <EditText android:editable="true" android:enabled="true" android:id="@+id/editEmail"
                       android:layout_gravity="center" android:layout_height="wrap_content"
                       android:layout_width="wrap_content" android:maxLines="1"
                       android:maxLength="50" android:hint="Email..."/>
@@ -36,12 +36,12 @@
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent" android:layout_gravity="center">
-                <EditText android:editable="true" android:enabled="true" android:id="@+id/editText2"
+                <EditText android:editable="true" android:enabled="true" android:id="@+id/editComment"
                           android:layout_gravity="center" android:layout_height="match_parent"
                           android:layout_width="match_parent" android:hint="Comentarios..." android:maxLines="5"/>
             </LinearLayout>
         </TableRow>
         <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enviar"
-                android:id="@+id/button" android:layout_gravity="center"/>
+                android:id="@+id/btnEnviar" android:layout_gravity="center"/>
     </LinearLayout>
 </LinearLayout>

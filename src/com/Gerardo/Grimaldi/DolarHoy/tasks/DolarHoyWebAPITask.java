@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.ViewGroup;
 import com.Gerardo.Grimaldi.DolarHoy.MainActivity;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
 import com.Gerardo.Grimaldi.DolarHoy.R;
@@ -73,8 +74,12 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
                     valorEuroHoyVenta);
 
             this.activity.setData(data);
-            if (!this.activity.isFragmentsOn())
-                {this.activity.startFragments();}
+
+
+            if (!this.activity.isFragmentsOn()) {
+                this.activity.startFragments();
+            }
+
         } catch (JSONException e) {
 			e.printStackTrace();
 		}

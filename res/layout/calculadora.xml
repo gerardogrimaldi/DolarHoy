@@ -82,7 +82,7 @@
                                   android:id="@+id/textView4"
                                   android:layout_gravity="center_vertical"
                                   android:textSize="30dp" android:gravity="right"/>
-                        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/EuroVenta"
+                        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/euroVenta"
                                   android:layout_gravity="center" android:editable="false" android:enabled="true"
                                   android:gravity="left" android:layout_column="1"/>
                     </TableRow>
@@ -91,15 +91,15 @@
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
-                        android:id="@+id/editText2" android:layout_gravity="center" android:hint="Valor a calcular..."
-                        android:digits="0123456789.," android:textIsSelectable="true"
+                        android:id="@+id/aCalcular" android:layout_gravity="center" android:hint="Valor a calcular..."
+                        android:digits="0123456789." android:textIsSelectable="true"
                         android:maxLines="1" android:maxLength="15" android:inputType="numberDecimal"
                         android:enabled="true" android:editable="true"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Calcular"
-                        android:id="@+id/button"
+                        android:id="@+id/btnCalcular"
                         android:layout_gravity="center"/>
                 </TableRow>
                 </LinearLayout>

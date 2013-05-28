@@ -42,11 +42,23 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        execTask();
+        if (data == null){
+            execTask();
+        }else{
+            startFragments();
+        }
+
     }
 
     public void startFragments(){
         setFragmentsOn(true);
+
+//        ViewGroup vg = (ViewGroup) findViewById (R.id.main);
+//        if(vg != null)
+//        {vg.removeAllViews();
+//        vg.invalidate();
+//        vg.refreshDrawableState();}
+
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
         setContentView(R.layout.main);
 

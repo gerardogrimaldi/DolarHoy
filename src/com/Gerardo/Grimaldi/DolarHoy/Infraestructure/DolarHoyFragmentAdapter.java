@@ -105,7 +105,7 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
             title = CONTENT[6];
             break;
         case 7:
-            title = CONTENT[6];
+            title = CONTENT[7];
             break;
 		}
 		
