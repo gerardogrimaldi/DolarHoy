@@ -53,11 +53,11 @@ public class MainActivity extends FragmentActivity {
     public void startFragments(){
         setFragmentsOn(true);
 
-//        ViewGroup vg = (ViewGroup) findViewById (R.id.main);
-//        if(vg != null)
-//        {vg.removeAllViews();
-//        vg.invalidate();
-//        vg.refreshDrawableState();}
+        ViewGroup vg = (ViewGroup) findViewById (R.id.main);
+        if(vg != null)
+        {vg.removeAllViews();
+        vg.invalidate();
+        vg.refreshDrawableState();}
 
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
         setContentView(R.layout.main);
