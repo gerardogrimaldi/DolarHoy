@@ -54,10 +54,10 @@ public class MainActivity extends FragmentActivity {
         setFragmentsOn(true);
 
         ViewGroup vg = (ViewGroup) findViewById (R.id.main);
-        if(vg != null)
+        /*if(vg != null)
         {vg.removeAllViews();
         vg.invalidate();
-        vg.refreshDrawableState();}
+        vg.refreshDrawableState();}*/
 
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
         setContentView(R.layout.main);
@@ -67,6 +67,9 @@ public class MainActivity extends FragmentActivity {
 
         mIndicator = (TabPageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
+
+        mAdapter.notifyDataSetChanged();
+        mIndicator.notifyDataSetChanged();
     }
 
     @Override

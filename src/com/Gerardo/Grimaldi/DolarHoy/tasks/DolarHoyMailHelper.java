@@ -35,13 +35,13 @@ public class DolarHoyMailHelper {
 	 * @return Array of json strings returned by the API.
 	 * @throws ApiException
 	 */
-	protected static synchronized boolean sendMailFromServer (String... params) throws ApiException	{
+	public static synchronized boolean sendMailFromServer(String... params) throws ApiException	{
         String retrival;
         String name = params[0];
         String subject = params[1];
         String text = params[2];
 
-        String url = GetValuestUrl + "/" + name + "/" + subject + "/" + text + "/" ;
+        String url = GetValuestUrl + name + "/" + subject + "/" + text + "/" ;
 		//Log.d(logTag, "Fetching " + url);
 		// create an http client and a request object.
 		HttpClient client = new DefaultHttpClient();

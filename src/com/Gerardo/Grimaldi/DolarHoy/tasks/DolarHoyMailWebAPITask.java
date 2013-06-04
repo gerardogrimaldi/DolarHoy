@@ -28,7 +28,7 @@ public class DolarHoyMailWebAPITask extends AsyncTask<String, Integer, String>{
 	@Override
     protected void onPreExecute() {
         super.onPreExecute();
-    	//progDialog = ProgressDialog.show(this.activity, "Enviando...", this.context.getResources().getString(R.string.progDialog), true, false);
+//    	progDialog = ProgressDialog.show(this.activity, "Enviando...", this.context.getResources().getString(R.string.progDialog), true, false);
     }
 
     @Override

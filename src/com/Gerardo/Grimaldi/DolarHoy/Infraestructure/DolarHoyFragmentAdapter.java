@@ -111,13 +111,16 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
 		
 		return title;
 	}
-	
-//	public void setCount(int count){
-//		if (count > 0 && count < 10){
-//			mCount = count;
-//			notifyDataSetChanged();
-//		}
-//	}
-	
 
+    @Override
+    public int getItemPosition(Object object) {
+        return POSITION_NONE;
+    }
+	
+    public void setCount(int count){
+    	if (count > 0 && count < 10){
+            mCount = count;
+            notifyDataSetChanged();
+		}
+    }
 }
