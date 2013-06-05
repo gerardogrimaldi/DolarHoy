@@ -55,12 +55,14 @@
                                   android:textSize="30dp"
                                   android:gravity="right"/>
                         <EditText android:layout_width="wrap_content"
-                                  android:layout_height="fill_parent"
+                                  android:layout_height="wrap_content"
                                   android:id="@+id/euroCompra"
                                   android:layout_gravity="center"
                                   android:enabled="true"
                                   android:gravity="left"
                                   android:editable="false"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarEuroCompra" android:layout_column="2"/>
                     </TableRow>
                     <TableRow
                             android:layout_width="wrap_content"
@@ -80,6 +82,8 @@
                                   android:editable="false"
                                   android:enabled="true"
                                   android:gravity="left"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarEuroVenta" android:layout_column="2"/>
                     </TableRow>
                 </TableLayout>
             </LinearLayout>

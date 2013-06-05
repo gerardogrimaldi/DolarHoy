@@ -39,62 +39,70 @@
                         <TextView android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
                                   android:text=" Oficial $"
-                                  android:id="@+id/textView1"
-                                  android:textSize="30dp"
-                                  android:gravity="right"/>
+                                  android:textSize="25dp"
+                                  android:gravity="right" android:layout_gravity="center_vertical"/>
                         <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dolarVenta"
                                   android:layout_gravity="center" android:editable="false" android:enabled="true"
                                   android:gravity="left" android:layout_column="1"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarDolar" android:layout_column="2"/>
                     </TableRow>
                     <TableRow android:layout_width="wrap_content"
                               android:layout_height="wrap_content" android:layout_gravity="center"
-                              android:id="@+id/tableRow2">
+                            >
                         <TextView android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
-                                  android:text=" Blue $" android:id="@+id/textView"
+                                  android:text=" Blue $"
                                   android:layout_gravity="center_vertical"
-                                  android:textSize="30dp" android:gravity="right"/>
+                                  android:textSize="25dp" android:gravity="right"/>
                         <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dolarBlueVenta"
                                   android:layout_gravity="center" android:editable="false" android:enabled="true"
                                   android:gravity="left" android:layout_column="1"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarBlue" android:layout_column="2"/>
                     </TableRow>
                     <TableRow android:layout_width="wrap_content"
                               android:layout_height="50dp"
                               android:layout_gravity="center"
-                              android:id="@+id/tableRow3">
+                            >
                         <TextView android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
                                   android:text=" Tarjeta $"
-                                  android:id="@+id/textView3"
                                   android:layout_gravity="center_vertical"
-                                  android:textSize="30dp" android:gravity="right"/>
+                                  android:textSize="25dp" android:gravity="right"/>
                         <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dolarTarjeta"
                                   android:layout_gravity="center" android:editable="false" android:enabled="true"
                                   android:gravity="left" android:layout_column="1"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarTarjeta" android:layout_column="2"/>
                     </TableRow>
                     <TableRow android:layout_width="wrap_content"
                               android:layout_height="50dp"
                               android:layout_gravity="center"
-                              android:id="@+id/tableRow4">
+                            >
                         <TextView android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
                                   android:text=" Euro $"
-                                  android:id="@+id/textView4"
                                   android:layout_gravity="center_vertical"
-                                  android:textSize="30dp" android:gravity="right"/>
+                                  android:textSize="25dp" android:gravity="right"/>
                         <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/euroVenta"
                                   android:layout_gravity="center" android:editable="false" android:enabled="true"
                                   android:gravity="left" android:layout_column="1"/>
+                        <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Copiar"
+                                android:id="@+id/CopiarEuro"/>
                     </TableRow>
                 </TableLayout>
-                <TableRow android:layout_width="wrap_content" android:layout_height="50dp" android:layout_gravity="center" android:id="@+id/tableRow1">
+                <TableRow android:layout_width="wrap_content" android:layout_height="50dp" android:layout_gravity="center">
                     <EditText
                         android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_height="wrap_content"
                         android:id="@+id/aCalcular" android:layout_gravity="center"
                         android:numeric="decimal"
                         android:hint="Valor a calcular..."
-                        android:digits="0123456789." android:textIsSelectable="true"
+                        android:textIsSelectable="true"
                         android:maxLines="1" android:maxLength="15" android:inputType="numberDecimal"
                         android:enabled="true" android:editable="true"/>
                     <Button

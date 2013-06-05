@@ -47,6 +47,11 @@
                           android:id="@+id/dolarTarjeta" android:editable="false"
                           android:enabled="true"
                           android:layout_gravity="center"/>
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Copiar"
+                            android:id="@+id/CopiarDolarTarjeta"/>
                 </TableRow>
             </LinearLayout>
         </com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout>

@@ -39,7 +39,8 @@
 
                 <TableLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:baselineAligned="false"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
                         android:layout_gravity="center">
                     <TableRow
                             android:layout_width="wrap_content"
@@ -54,13 +55,17 @@
                                   android:textSize="30dp"
                                   android:gravity="right"/>
                         <EditText android:layout_width="wrap_content"
-                                  android:layout_height="fill_parent"
+                                  android:layout_height="wrap_content"
                                   android:id="@+id/dolarCompra"
                                   android:layout_gravity="center"
                                   android:enabled="true"
                                   android:text="Valor"
-                                  android:gravity="left"
                                   android:editable="false"/>
+                        <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/CopiarDolarCompra"
+                                android:text="Copiar"/>
                     </TableRow>
                     <TableRow
                             android:layout_width="wrap_content"
@@ -80,7 +85,10 @@
                                   android:editable="false"
                                   android:enabled="true"
                                   android:text="Valor"
-                                  android:gravity="left"/>
+                                />
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:id="@+id/CopiarDolarVenta"
+                                     android:layout_column="2" android:text="Copiar"/>
                     </TableRow>
                 </TableLayout>
             </LinearLayout>
