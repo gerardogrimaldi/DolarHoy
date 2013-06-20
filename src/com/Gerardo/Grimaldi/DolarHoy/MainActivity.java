@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.*;
+import android.widget.ImageView;
 import android.widget.Toast;
 import com.Gerardo.Grimaldi.DolarHoy.Infraestructure.DolarHoyFragmentAdapter;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
@@ -44,20 +45,14 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         if (data == null){
             execTask();
-        }else{
+        } else {
             startFragments();
         }
 
     }
 
     public void startFragments(){
-        setFragmentsOn(true);
-
-        ViewGroup vg = (ViewGroup) findViewById (R.id.main);
-        /*if(vg != null)
-        {vg.removeAllViews();
-        vg.invalidate();
-        vg.refreshDrawableState();}*/
+       /* setFragmentsOn(true);*/
 
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
         setContentView(R.layout.main);
@@ -68,8 +63,11 @@ public class MainActivity extends FragmentActivity {
         mIndicator = (TabPageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
 
+/*        mPager.setCurrentItem(0);
+        mAdapter.getItemPosition(0);
+
         mAdapter.notifyDataSetChanged();
-        mIndicator.notifyDataSetChanged();
+        mIndicator.notifyDataSetChanged();*/
     }
 
     @Override
@@ -78,6 +76,7 @@ public class MainActivity extends FragmentActivity {
             case 2:
                 try {
                     execTask();
+                    startFragments();
                 } catch (Exception e) {
                     DhTask.cancel(true);
                     alert(getResources().getString(R.string.no_internet));

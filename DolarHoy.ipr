@@ -269,15 +269,19 @@
     <dictionary name="Milo">
       <words>
         <w>actualizados</w>
+        <w>blogspot</w>
+        <w>browsable</w>
         <w>calcular</w>
         <w>cargando</w>
         <w>conectandose</w>
         <w>contactar</w>
         <w>contesta</w>
+        <w>cuelga</w>
         <w>dolarhoy</w>
         <w>dolarhoydb</w>
         <w>enviar</w>
         <w>grimaldi</w>
+        <w>grimaldigerardo</w>
         <w>hola</w>
         <w>ingrese</w>
         <w>intente</w>
@@ -285,6 +289,7 @@
         <w>invalida</w>
         <w>inversed</w>
         <w>johg</w>
+        <w>mailto</w>
         <w>mongohq</w>
         <w>myrb</w>
         <w>nombre</w>
@@ -295,6 +300,7 @@
         <w>pruebe</w>
         <w>puede</w>
         <w>respuesta</w>
+        <w>sendto</w>
         <w>servidor</w>
         <w>setear</w>
         <w>seteo</w>

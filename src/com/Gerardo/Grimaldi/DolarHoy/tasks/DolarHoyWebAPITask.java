@@ -75,11 +75,12 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
 
             this.activity.setData(data);
 
+            this.activity.startFragments();
 
-            if (!this.activity.isFragmentsOn()) {
+       /*     if (!this.activity.isFragmentsOn()) {
                 this.activity.startFragments();
             }
-
+*/
         } catch (JSONException e) {
 			e.printStackTrace();
 		}
