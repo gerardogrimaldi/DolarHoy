@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true" >
+
+    <com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"
+            android:measureWithLargestChild="false">
+        <LinearLayout
+                style="@style/nowCardStyle"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context=".MainActivity"
+                android:orientation="vertical" android:gravity="top"
+                >
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher"
+                android:src="@drawable/ic_launcher" android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dolar Hoy"
+                android:layout_gravity="center"/>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pensado y desarrollado por "
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Gerardo Germán Grimaldi"
+                android:layout_gravity="center"
+                android:autoLink="all" android:autoText="true"
+                android:clickable="false"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text=" grimaldi.gerardo@gmail.com" android:layout_gravity="center"
+                      android:autoText="false" android:clickable="false" android:autoLink="email"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fuentes:"
+                      android:layout_gravity="center"/>
+            <ImageView android:layout_width="130dp" android:layout_height="30dp"
+                       android:src="@drawable/ambitocom"
+                       android:layout_gravity="center" android:cropToPadding="false"
+                       android:adjustViewBounds="false"/>
+            <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:cropToPadding="false"
+                    android:src="@drawable/lanacioncom"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Por el codigo de este programa..."
+                      android:layout_gravity="center" android:onClick="http://grimaldigerardo.blogspot.com.ar/ "
+                    />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="http://grimaldigerardo.blogspot.com.ar/" android:layout_gravity="center"
+                      android:autoLink="all"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licencia GNU"
+                android:layout_gravity="center"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+</com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout>
+</ScrollView>

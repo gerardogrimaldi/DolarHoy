@@ -1,10 +1,13 @@
 package com.Gerardo.Grimaldi.DolarHoy;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.*;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 import com.Gerardo.Grimaldi.DolarHoy.Infraestructure.DolarHoyFragmentAdapter;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
@@ -12,6 +15,7 @@ import com.Gerardo.Grimaldi.DolarHoy.tasks.DolarHoyWebAPITask;
 import com.viewpagerindicator.PageIndicator;
 import com.viewpagerindicator.TabPageIndicator;
 import com.viewpagerindicator.TitlePageIndicator;
+import com.google.ads.*;
 
 public class MainActivity extends FragmentActivity {
     DolarHoyFragmentAdapter mAdapter;
@@ -19,16 +23,9 @@ public class MainActivity extends FragmentActivity {
     PageIndicator mIndicator;
     private Data data;
     private DolarHoyWebAPITask DhTask;
-    private boolean fragmentsOn = false;
+    private AdView adView;
 
-    public boolean isFragmentsOn() {
-        return fragmentsOn;
-    }
-
-    public void setFragmentsOn(boolean fragmentsOn) {
-        this.fragmentsOn = fragmentsOn;
-    }
-
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, 1, 1, "Menu").setEnabled(false).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
@@ -48,11 +45,17 @@ public class MainActivity extends FragmentActivity {
         } else {
             startFragments();
         }
-
     }
 
     public void startFragments(){
-       /* setFragmentsOn(true);*/
+        ViewGroup vg = (ViewGroup) findViewById (R.id.main);
+
+        if(vg != null) {
+            getWindow().getDecorView().findViewById(R.id.main).invalidate();
+            vg.removeAllViews();
+            vg.refreshDrawableState();
+            vg.invalidate();
+        }
 
         mAdapter = new DolarHoyFragmentAdapter(getSupportFragmentManager(), getData());
         setContentView(R.layout.main);
@@ -63,12 +66,32 @@ public class MainActivity extends FragmentActivity {
         mIndicator = (TabPageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
 
-/*        mPager.setCurrentItem(0);
+        mPager.setCurrentItem(0);
         mAdapter.getItemPosition(0);
+        mAdapter.getItem(0);
 
         mAdapter.notifyDataSetChanged();
-        mIndicator.notifyDataSetChanged();*/
+        mIndicator.notifyDataSetChanged();
+
+
+        // Create the adView
+        adView = new AdView(this, AdSize.IAB_LEADERBOARD, "a151c714b6e5599");
+
+        // Lookup your LinearLayout assuming it's been given
+        // the attribute android:id="@+id/mainLayout"
+        LinearLayout layout = (LinearLayout)findViewById(R.id.main);
+
+        // Add the adView to it
+        layout.addView(adView);
+
+        AdRequest adRequest = new AdRequest();
+
+
+        // Initiate a generic request to load it with an ad
+        adView.loadAd(adRequest);
+
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -76,7 +99,6 @@ public class MainActivity extends FragmentActivity {
             case 2:
                 try {
                     execTask();
-                    startFragments();
                 } catch (Exception e) {
                     DhTask.cancel(true);
                     alert(getResources().getString(R.string.no_internet));
@@ -102,5 +124,12 @@ public class MainActivity extends FragmentActivity {
     protected void execTask() {
         DhTask = new DolarHoyWebAPITask(MainActivity.this);
         DhTask.execute();
+    }
+    @Override
+    public void onDestroy() {
+        if (adView != null) {
+            adView.destroy();
+        }
+        super.onDestroy();
     }
 }

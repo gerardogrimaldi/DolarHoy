@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              tools:context=".MainActivity">
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
@@ -97,14 +99,11 @@
                 </TableLayout>
                 <TableRow android:layout_width="wrap_content" android:layout_height="50dp" android:layout_gravity="center">
                     <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/aCalcular" android:layout_gravity="center"
-                        android:numeric="decimal"
-                        android:hint="Valor a calcular..."
-                        android:textIsSelectable="true"
-                        android:maxLines="1" android:maxLength="15" android:inputType="numberDecimal"
-                        android:enabled="true" android:editable="true"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/aCalcular" android:layout_gravity="center"
+                            android:hint="Valor a calcular..." android:inputType="numberDecimal"
+                            android:minWidth="15dp"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -112,6 +111,10 @@
                         android:id="@+id/btnCalcular"
                         android:layout_gravity="center"/>
                 </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                    </TableRow>
                 </LinearLayout>
             </LinearLayout>
         </com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout>

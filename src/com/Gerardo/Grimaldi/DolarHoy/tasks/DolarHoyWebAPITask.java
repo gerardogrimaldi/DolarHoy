@@ -72,15 +72,8 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
                     valorDolarTarjeta,
                     valorEuroHoyCompra,
                     valorEuroHoyVenta);
-
             this.activity.setData(data);
-
             this.activity.startFragments();
-
-       /*     if (!this.activity.isFragmentsOn()) {
-                this.activity.startFragments();
-            }
-*/
         } catch (JSONException e) {
 			e.printStackTrace();
 		}

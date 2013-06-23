@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.TextView;
+
 import com.Gerardo.Grimaldi.DolarHoy.Controllers.*;
 import com.Gerardo.Grimaldi.DolarHoy.Model.Data;
 import com.viewpagerindicator.IconPagerAdapter;
@@ -123,4 +127,5 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
             notifyDataSetChanged();
 		}
     }
+
 }
