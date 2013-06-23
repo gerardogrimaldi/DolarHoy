@@ -73,11 +73,12 @@
                           android:enabled="true"
                           android:id="@+id/editComment"
                           android:layout_gravity="center"
+                          android:gravity="top"
                           android:layout_height="match_parent"
                           android:layout_width="match_parent"
                           android:hint="Comentarios..."
                           android:maxLines="5"
-                          android:inputType="textLongMessage" android:lines="10" android:textAlignment="gravity"/>
+                          android:inputType="textLongMessage" android:lines="10"/>
             </LinearLayout>
         </TableRow>
         <Button android:layout_width="fill_parent"

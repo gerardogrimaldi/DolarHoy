@@ -75,7 +75,7 @@ public class MainActivity extends FragmentActivity {
 
 
         // Create the adView
-        adView = new AdView(this, AdSize.IAB_LEADERBOARD, "a151c714b6e5599");
+        adView = new AdView(this, AdSize.IAB_BANNER, "a151c714b6e5599");
 
         // Lookup your LinearLayout assuming it's been given
         // the attribute android:id="@+id/mainLayout"
@@ -86,9 +86,11 @@ public class MainActivity extends FragmentActivity {
 
         AdRequest adRequest = new AdRequest();
 
-
         // Initiate a generic request to load it with an ad
         adView.loadAd(adRequest);
+
+   /*     AdView adView = (AdView)this.findViewById(R.id.adView);
+        adView.loadAd(new AdRequest());*/
 
     }
 

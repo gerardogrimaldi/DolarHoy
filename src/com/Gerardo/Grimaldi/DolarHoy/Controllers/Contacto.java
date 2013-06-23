@@ -1,5 +1,6 @@
 package com.Gerardo.Grimaldi.DolarHoy.Controllers;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -32,8 +33,7 @@ public class Contacto extends Fragment {
         //accion del boton
         btnEnviar = (Button) myFragmentView.findViewById(R.id.btnEnviar);
         btnEnviar.setOnClickListener(new Button.OnClickListener() {
-            public void onClick
-                    (View  v) {
+            public void onClick (View  v) {
                 sendMail();
             }
             private void sendMail() {
@@ -47,6 +47,7 @@ public class Contacto extends Fragment {
                     activity.alert("Ingrese todos los campos para enviar...");
                 } else {
                     try {
+                        activity.alert("Enviando...");
                         final String[] params = new String[3];
                         params[0] = sNombre.replaceAll("[^A-Za-z0-9@.]", "");
                         params[1] = sEmail.replaceAll("[^A-Za-z0-9@.]", "");

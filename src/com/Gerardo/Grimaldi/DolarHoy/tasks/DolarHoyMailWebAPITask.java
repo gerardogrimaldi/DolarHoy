@@ -19,16 +19,16 @@ public class DolarHoyMailWebAPITask extends AsyncTask<String, Integer, String>{
 	private MainActivity activity;
 	private static final String debugTag = "DolarHoyWebAPITask";
 
-    public DolarHoyMailWebAPITask(String... params) {
+    public DolarHoyMailWebAPITask(MainActivity activity,String... params) {
 		super();
-//        this.activity = activity;
-//        this.context = this.activity.getApplicationContext();
+        this.activity = activity;
+        this.context = this.activity.getApplicationContext();
 	}
 
 	@Override
     protected void onPreExecute() {
         super.onPreExecute();
-//    	progDialog = ProgressDialog.show(this.activity, "Enviando...", this.context.getResources().getString(R.string.progDialog), true, false);
+    	progDialog = ProgressDialog.show(this.activity, "Enviando...", this.context.getResources().getString(R.string.progDialog), true, false);
     }
 
     @Override
@@ -51,7 +51,7 @@ public class DolarHoyMailWebAPITask extends AsyncTask<String, Integer, String>{
     @Override
     protected void onPostExecute(String result)
     {
-        //progDialog.dismiss();
+        progDialog.dismiss();
         super.onPostExecute(result);
 
     }
