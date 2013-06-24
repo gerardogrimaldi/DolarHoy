@@ -75,7 +75,7 @@ public class MainActivity extends FragmentActivity {
 
 
         // Create the adView
-        adView = new AdView(this, AdSize.IAB_BANNER, "a151c714b6e5599");
+        adView = new AdView(this, AdSize.SMART_BANNER, "a151c714b6e5599");
 
         // Lookup your LinearLayout assuming it's been given
         // the attribute android:id="@+id/mainLayout"
