@@ -40,7 +40,12 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
             result = DolarHoyHelper.downloadFromServer(params);
         } catch (DolarHoyHelper.ApiException e) {
             //e.printStackTrace();
-            return new String();
+            try {
+                result = DolarHoyHelper.downloadFromServer(params);
+            } catch (DolarHoyHelper.ApiException ex) {
+                //e.printStackTrace();
+                return new String();
+            }
         }
         return result;
     }
