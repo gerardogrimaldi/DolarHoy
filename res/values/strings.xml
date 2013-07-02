@@ -4,6 +4,7 @@
 
 	<string name="track_button_label">Dolar Hoy</string>
     <string name="progDialog">Cargando Valores Actualizados...</string>
+    <string name="progDialogMail">Aguarde mientras se envia el mensaje...</string>
 
     <string-array name="metros">
 		<item>Denver</item>

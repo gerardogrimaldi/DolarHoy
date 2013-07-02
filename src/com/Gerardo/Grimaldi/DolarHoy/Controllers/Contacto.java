@@ -19,8 +19,8 @@ import java.util.ArrayList;
 
 public class Contacto extends Fragment {
     Button btnEnviar;
-    private DolarHoyMailWebAPITask DhTask;
     MainActivity activity;
+    private ProgressDialog progDialog;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         final View myFragmentView = inflater.inflate(R.layout.contacto, null);//, container, false);
         activity = (MainActivity) getActivity();
@@ -47,6 +47,7 @@ public class Contacto extends Fragment {
                     activity.alert("Ingrese todos los campos para enviar...");
                 } else {
                     try {
+                        progDialog = ProgressDialog.show(activity, "Enviando...", getResources().getString(R.string.progDialogMail), true, false);
                         activity.alert("Enviando...");
                         final String[] params = new String[3];
                         params[0] = sNombre.replaceAll("[^A-Za-z0-9@.]", "");
@@ -54,9 +55,11 @@ public class Contacto extends Fragment {
                         params[2] = sComment.replaceAll("[^A-Za-z0-9@.]", "");
 
                         if(DolarHoyMailHelper.sendMailFromServer(params))              {
+                            progDialog.dismiss();
                             activity.alert("Mensaje enviado...");
                         }
                     } catch (DolarHoyMailHelper.ApiException e) {
+                        progDialog.dismiss();
                         activity.alert("Error al enviar el mensaje...");
                         e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                     }
