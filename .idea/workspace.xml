@@ -34,41 +34,7 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8f0e357-3760-4e74-936f-01f975df7569" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GoogleAdMobAdsSdk_6_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Real.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_play_services2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/real.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.apk" afterPath="$PROJECT_DIR$/DolarHoy.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Calculadora.java" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Calculadora.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Contacto.java" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Controllers/Contacto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Data.java" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Model/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.iml" afterPath="$PROJECT_DIR$/DolarHoy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.ipr" afterPath="$PROJECT_DIR$/DolarHoy.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DolarHoy.iws" afterPath="$PROJECT_DIR$/DolarHoy.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/Infraestructure/DolarHoyFragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyMailHelper.java" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyMailHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java" afterPath="$PROJECT_DIR$/src/com/Gerardo/Grimaldi/DolarHoy/tasks/DolarHoyWebAPITask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/gen/com/actionbarsherlock/Manifest.java" afterPath="$PROJECT_DIR$/actionbarsherlock/gen/com/actionbarsherlock/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/Gerardo/Grimaldi/DolarHoy/Manifest.java" afterPath="$PROJECT_DIR$/gen/com/Gerardo/Grimaldi/DolarHoy/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-play-services_lib/gen/com/google/android/gms/Manifest.java" afterPath="$PROJECT_DIR$/google-play-services_lib/gen/com/google/android/gms/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewpagerindicator/gen/com/viewpagerindicator/Manifest.java" afterPath="$PROJECT_DIR$/viewpagerindicator/gen/com/viewpagerindicator/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Milo.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Milo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/gen/com/actionbarsherlock/R.java" afterPath="$PROJECT_DIR$/actionbarsherlock/gen/com/actionbarsherlock/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/Gerardo/Grimaldi/DolarHoy/R.java" afterPath="$PROJECT_DIR$/gen/com/Gerardo/Grimaldi/DolarHoy/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-play-services_lib/gen/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/google-play-services_lib/gen/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewpagerindicator/gen/com/viewpagerindicator/R.java" afterPath="$PROJECT_DIR$/viewpagerindicator/gen/com/viewpagerindicator/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" afterPath="$PROJECT_DIR$/actionbarsherlock/actionbarsherlock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/calculadora.xml" afterPath="$PROJECT_DIR$/res/layout/calculadora.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/euro.xml" afterPath="$PROJECT_DIR$/res/layout/euro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" afterPath="$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d8f0e357-3760-4e74-936f-01f975df7569" name="Default" comment="" />
     <ignored path="DolarHoy.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -505,7 +471,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -525,7 +491,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982674" sideWeight="0.6709753" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24785802" sideWeight="0.67318755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32681242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1492" height="826" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
