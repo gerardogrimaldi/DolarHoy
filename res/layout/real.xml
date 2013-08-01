@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true" >
+
+        <com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e5e5e5"
+                android:orientation="vertical" >
+            <LinearLayout
+                    style="@style/nowCardStyle"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    tools:context=".MainActivity"
+                    android:orientation="vertical" android:gravity="top"
+                    >
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/tableRow">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Real"
+                            android:layout_gravity="center"
+                            android:textSize="30dp"/>
+                </TableRow>
+
+                <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:layout_gravity="center">
+                    <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10dp">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Compra R$"
+                                  android:id="@+id/textView1"
+                                  android:layout_gravity="center_vertical"
+                                  android:textSize="25dp"
+                                  android:gravity="right"/>
+                        <EditText android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/realCompra"
+                                  android:layout_gravity="center"
+                                  android:enabled="true"
+                                  android:gravity="left"
+                                  android:editable="false"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarRealCompra" android:layout_column="2"/>
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="10dp">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Venta R$"
+                                  android:id="@+id/textView"
+                                  android:textSize="25dp"
+                                  android:gravity="right"/>
+                        <EditText android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/realVenta"
+                                  android:layout_gravity="center"
+                                  android:editable="false"
+                                  android:enabled="true"
+                                  android:gravity="left"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Copiar" android:id="@+id/CopiarRealVenta" android:layout_column="2"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </com.Gerardo.Grimaldi.DolarHoy.Infraestructure.NowLayout>
+    </ScrollView>
+</LinearLayout>

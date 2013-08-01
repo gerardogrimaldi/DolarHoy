@@ -62,14 +62,18 @@ public class DolarHoyWebAPITask extends AsyncTask<String, Integer, String>{
             BigDecimal valorDolarBlueCompra = new BigDecimal(respObj.getString("dolarBlueCompra"));
             BigDecimal valorDolarBlueVenta = new BigDecimal(respObj.getString("dolarBlueVenta"));
             BigDecimal valorDolarTarjeta = new BigDecimal(respObj.getString("dolarTarjeta"));
+            BigDecimal valorRealHoyCompra = new BigDecimal(respObj.getString("realCompra"));
+            BigDecimal valorRealHoyVenta = new BigDecimal(respObj.getString("realVenta"));
             BigDecimal valorEuroHoyCompra = new BigDecimal(respObj.getString("euroCompra"));
             BigDecimal valorEuroHoyVenta = new BigDecimal(respObj.getString("euroVenta"));
 
-            Data data = new Data( valorDolarHoyCompra,
+            Data data = new Data(valorDolarHoyCompra,
                     valorDolarHoyVenta,
                     valorDolarBlueCompra,
                     valorDolarBlueVenta,
                     valorDolarTarjeta,
+                    valorRealHoyCompra,
+                    valorRealHoyVenta,
                     valorEuroHoyCompra,
                     valorEuroHoyVenta);
             this.activity.setData(data);

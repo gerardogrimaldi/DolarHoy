@@ -36,7 +36,7 @@ public class DolarHoyMailHelper {
 	 * @throws ApiException
 	 */
 	public static synchronized boolean sendMailFromServer(String... params) throws ApiException	{
-        String retrival;
+        //String retrival;
         String name = params[0];
         String subject = params[1];
         String text = params[2];

@@ -16,14 +16,19 @@ public class Data {
     private BigDecimal ValorDolarBlueCompra;
     private BigDecimal ValorDolarBlueVenta;
     private BigDecimal ValorDolarTarjeta;
+    private BigDecimal ValorRealHoyVenta;
+    private BigDecimal ValorRealHoyCompra;
     private BigDecimal ValorEuroHoyCompra;
     private BigDecimal ValorEuroHoyVenta;
+
 
     public Data(BigDecimal valorDolarHoyCompra,
                 BigDecimal valorDolarHoyVenta,
                 BigDecimal valorDolarBlueCompra,
                 BigDecimal valorDolarBlueVenta,
                 BigDecimal valorDolarTarjeta,
+                BigDecimal valorRealHoyCompra,
+                BigDecimal valorRealHoyVenta,
                 BigDecimal valorEuroHoyCompra,
                 BigDecimal valorEuroHoyVenta
     ) {
@@ -35,6 +40,8 @@ public class Data {
         this.ValorDolarTarjeta = valorDolarTarjeta;
         this.ValorEuroHoyCompra = valorEuroHoyCompra;
         this.ValorEuroHoyVenta = valorEuroHoyVenta;
+        this.ValorRealHoyCompra = valorEuroHoyCompra;
+        this.ValorRealHoyVenta = valorEuroHoyVenta;
     }
 
     public BigDecimal getValorDolarHoyCompra() {
@@ -91,6 +98,14 @@ public class Data {
 
     public void setValorEuroHoyVenta(BigDecimal valorEuroHoyVenta) {
         ValorEuroHoyVenta = valorEuroHoyVenta;
+    }
+
+    public BigDecimal getValorRealHoyVenta() {
+        return ValorRealHoyVenta;
+    }
+
+    public void setValorRealHoyVenta(BigDecimal valorEuroHoyVenta) {
+        ValorRealHoyVenta = valorEuroHoyVenta;
     }
 
 

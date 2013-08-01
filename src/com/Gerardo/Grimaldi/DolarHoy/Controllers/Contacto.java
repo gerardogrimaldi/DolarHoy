@@ -57,6 +57,9 @@ public class Contacto extends Fragment {
                         if(DolarHoyMailHelper.sendMailFromServer(params))              {
                             progDialog.dismiss();
                             activity.alert("Mensaje enviado...");
+                            nombre.setText("");
+                            email.setText("");
+                            comment.setText("");
                         }
                     } catch (DolarHoyMailHelper.ApiException e) {
                         progDialog.dismiss();

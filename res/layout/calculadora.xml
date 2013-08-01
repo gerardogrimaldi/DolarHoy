@@ -20,7 +20,7 @@
                     style="@style/nowCardStyle"
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="fill_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="350dp"
                     tools:context=".MainActivity"
                     android:orientation="vertical"
                     android:gravity="top"
@@ -84,7 +84,25 @@
                             >
                         <TextView android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
-                                  android:text=" Euro $"
+                                  android:text=" Real R$"
+                                  android:layout_gravity="center_vertical"
+                                  android:textSize="25dp" android:gravity="right"/>
+                        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/realVenta"
+                                  android:layout_gravity="center" android:editable="false" android:enabled="true"
+                                  android:gravity="left" android:layout_column="1"/>
+                        <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Copiar"
+                                android:id="@+id/CopiarReal"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                              android:layout_height="50dp"
+                              android:layout_gravity="center"
+                            >
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text=" Euro €"
                                   android:layout_gravity="center_vertical"
                                   android:textSize="25dp" android:gravity="right"/>
                         <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/euroVenta"

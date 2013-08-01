@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 
 public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
     Data data;
-    private static final String[] CONTENT = new String[] { "Dolar", "Blue" ,"Tarjeta", "Calculadora", "Euro", "Mapa", "Contacto", "Acerca de..." };
+    private static final String[] CONTENT = new String[] { "Dolar", "Blue" ,"Tarjeta", "Real", "Calculadora", "Euro", "Mapa", "Contacto", "Acerca de..." };
 	private int mCount = CONTENT.length;
 
     public DolarHoyFragmentAdapter(FragmentManager fm, Data data) {
@@ -51,27 +51,34 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
             bundle.putString("dolarTarjeta", data.getValorDolarTarjeta().toString());
             fragment.setArguments(bundle);
 			break;
-		case 3:
+        case 3:
+            fragment = new Real();
+            bundle.putString("realCompra", data.getValorEuroHoyCompra().toString());
+            bundle.putString("realVenta", data.getValorEuroHoyVenta().toString());
+            fragment.setArguments(bundle);
+            break;
+		case 4:
             fragment = new Calculadora();
             bundle.putString("dolarVenta", data.getValorDolarHoyVenta().toString());
             bundle.putString("dolarBlueVenta", data.getValorDolarBlueVenta().toString());
             bundle.putString("dolarTarjeta", data.getValorDolarTarjeta().toString());
+            bundle.putString("realVenta", data.getValorRealHoyVenta().toString());
             bundle.putString("euroVenta", data.getValorEuroHoyVenta().toString());
             fragment.setArguments(bundle);
             break;
-        case 4:
+        case 5:
             fragment = new Euro();
             bundle.putString("euroCompra", data.getValorEuroHoyCompra().toString());
             bundle.putString("euroVenta", data.getValorEuroHoyVenta().toString());
             fragment.setArguments(bundle);
             break;
-        case 5:
+        case 6:
             fragment = new Mapa();
             break;
-        case 6:
+        case 7:
             fragment = new Contacto();
             break;
-        case 7:
+        case 8:
             fragment = new About();
             break;
 		}
@@ -110,6 +117,9 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
             break;
         case 7:
             title = CONTENT[7];
+            break;
+        case 8:
+            title = CONTENT[8];
             break;
 		}
 		
