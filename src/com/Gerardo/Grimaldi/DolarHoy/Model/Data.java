@@ -40,8 +40,8 @@ public class Data {
         this.ValorDolarTarjeta = valorDolarTarjeta;
         this.ValorEuroHoyCompra = valorEuroHoyCompra;
         this.ValorEuroHoyVenta = valorEuroHoyVenta;
-        this.ValorRealHoyCompra = valorEuroHoyCompra;
-        this.ValorRealHoyVenta = valorEuroHoyVenta;
+        this.ValorRealHoyCompra = valorRealHoyCompra;
+        this.ValorRealHoyVenta = valorRealHoyVenta;
     }
 
     public BigDecimal getValorDolarHoyCompra() {

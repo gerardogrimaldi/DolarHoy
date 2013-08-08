@@ -53,8 +53,8 @@ public class DolarHoyFragmentAdapter extends FragmentPagerAdapter implements Ico
 			break;
         case 3:
             fragment = new Real();
-            bundle.putString("realCompra", data.getValorEuroHoyCompra().toString());
-            bundle.putString("realVenta", data.getValorEuroHoyVenta().toString());
+            bundle.putString("realCompra", data.getValorRealHoyVenta().toString());
+            bundle.putString("realVenta", data.getValorRealHoyVenta().toString());
             fragment.setArguments(bundle);
             break;
 		case 4:
